@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word Guess Game</title>
+
+    <!-- link the css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <!-- page header -->
+    <header class="pagehead">
+        <img class="headerpic" src="assets/images/90 theme banner.png">
+        <h1 class="headertexttop headtext">Guess The Name of 90's Top Female Actresses</h1>
+        <h2 class="headertextbottom headtext">(First Name Only)</h2>
+    </header>
+    <!--<a href="assets/images/winning.wav">Play music</a> -->
+    <!-- main content -->
+    <table>
+        <tr>
+            <td class="colleft">
+                <img class="subpic" src="assets/images/holiwood.jpg">
+            </td>
+            <td class="colright">
+                <p class="generaltext">Press any key to start</p>
+                <p class="generaltext">Wins: <span id="userwin">0</span></p>                
+                <p class="generaltext">Current Word</p>
+                <span id="userguess">---</span>
+                <p class="generaltext">Number of guesses remaining: <span id="userguess">0</span></p> 
+                <p class="generaltext">Letters already gussed: <span id="letterguessed"></span></p> 
+
+            </td>
+        </tr>
+    </table>
+
+    <!-- link javascript -->
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>
