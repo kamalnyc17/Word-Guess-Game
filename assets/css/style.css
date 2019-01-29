@@ -17,7 +17,8 @@ body {
     line-height: 48px;
     font-weight: 600;
 }
-.headertextbottom {
+.headertextbottom,
+#gameover {
     font-size: 24px;
     line-height: 30px;
     padding-bottom: 10px;
@@ -44,4 +45,7 @@ td {
 }
 .colright {
     text-align: center;
+}
+#gameover {    
+    color: red;
 }

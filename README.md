@@ -8,7 +8,10 @@
 
 5. If the user guesses the correct name, the script will play a music of applaud to indicate the user has won.
 
-6. For testing purpose, the valid names are:
+6. At the end of 15 attempts, the script will prompt "Game Over! Press Space Bar to replay." after the user presses the <space bar>, the script
+will initialize every field on the screen except the "number of wins" as it will be cumulated.
+
+7. For testing purpose, the valid names are:
 julia
 meg
 jodie
