@@ -13,7 +13,7 @@ getRandomName = nameList[Math.floor(Math.random() * nameList.length)];
 tempName = tempStr.repeat(getRandomName.length).split('');
 document.getElementById("uguess").innerHTML = tempName;
 
-// eventlistener section
+// This is the main section of the script. the script loops through 15 times here
 window.addEventListener( "keydown", function(){
     if (entryLeft > 0){
         var usercode = event.charCode || event.keyCode;  // Get the Unicode value
@@ -25,10 +25,12 @@ window.addEventListener( "keydown", function(){
             }
         }     
 
+        // updating various counter, array etc
         newName = tempName.toString().replace(/,/g, '');
         entryLeft--;
         totalEntry.push(userletter);
 
+        // updating the screen based on updated data
         document.getElementById("uguess").innerHTML = newName;
         document.getElementById("uguessleft").innerHTML = entryLeft;
         document.getElementById("letterguessed").innerHTML = totalEntry;
@@ -48,6 +50,7 @@ window.addEventListener( "keydown", function(){
             // check for space bar is pressed
             var spacecode = event.charCode || event.keyCode;  
             if (spacecode === 32){
+                // initialize screen and all control variables once the <spacebar> is placed
                 getRandomName = nameList[Math.floor(Math.random() * nameList.length)];  
                 tempName = tempStr.repeat(getRandomName.length).split('');
                 document.getElementById("uguess").innerHTML = tempName;
