@@ -1,3 +1,4 @@
+/* general style at the body level */
 body {
     max-width: 768px;
     font-family: 'Times New Roman', Times, serif;
@@ -7,6 +8,7 @@ body {
     box-shadow: 10px 10px;
     margin: auto;
 }
+/* style for the header */
 .headerpic {
     width: 768px;
     max-height: 100px;
@@ -24,6 +26,7 @@ body {
     padding-bottom: 10px;
     font-weight: 600;
 }
+/* rest of the page */
 .pagehead {
     background-color: burlywood;
 }
