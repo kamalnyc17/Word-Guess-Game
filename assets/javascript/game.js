@@ -28,10 +28,10 @@ window.addEventListener( "keydown", function(){
         // updating various counter, array etc
         newName = tempName.toString().replace(/,/g, '');
         entryLeft--;
-        totalEntry.push(userletter);
+        totalEntry.push(userletter.toUpperCase());
 
         // updating the screen based on updated data
-        document.getElementById("uguess").innerHTML = newName;
+        document.getElementById("uguess").innerHTML = newName.toUpperCase();
         document.getElementById("uguessleft").innerHTML = entryLeft;
         document.getElementById("letterguessed").innerHTML = totalEntry;
         if (newName === getRandomName){
