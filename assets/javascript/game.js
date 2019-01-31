@@ -43,7 +43,7 @@ window.addEventListener( "keydown", function(){
         }
     }
 
-    // restart after game over
+    // display the "Game Over" message and initialize as soon as there is clear win or lose
     if (entryLeft <= 0){        
         document.getElementById("gameover").innerHTML = "Game Over! Press Space Bar to replay.";
         document.onkeyup = function() {            
