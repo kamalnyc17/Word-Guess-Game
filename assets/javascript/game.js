@@ -10,8 +10,8 @@ var winN = 0;
 
 // picking a name from the list
 getRandomName = nameList[Math.floor(Math.random() * nameList.length)];
+document.getElementById("uguess").innerHTML = tempStr.repeat(getRandomName.length);
 tempName = tempStr.repeat(getRandomName.length).split('');
-document.getElementById("uguess").innerHTML = tempName;
 
 // This is the main section of the script. the script loops through 15 times here
 window.addEventListener( "keydown", function(){
@@ -52,8 +52,8 @@ window.addEventListener( "keydown", function(){
             if (spacecode === 32){
                 // initialize screen and all control variables once the <spacebar> is placed
                 getRandomName = nameList[Math.floor(Math.random() * nameList.length)];  
+                document.getElementById("uguess").innerHTML = tempStr.repeat(getRandomName.length);
                 tempName = tempStr.repeat(getRandomName.length).split('');
-                document.getElementById("uguess").innerHTML = tempName;
                 entryLeft = 15;
                 totalEntry = [];
                 newName = "";
