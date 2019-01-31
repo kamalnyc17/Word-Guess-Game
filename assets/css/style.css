@@ -26,7 +26,6 @@ body {
     padding-bottom: 10px;
     font-weight: 600;
 }
-/* rest of the page */
 .pagehead {
     background-color: burlywood;
 }
@@ -34,6 +33,7 @@ body {
     text-align: center;
     color: #fff;
 }
+/* rest of the page */
 table {
     width: 100%;
     border-top: 1px solid black;
