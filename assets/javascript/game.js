@@ -19,16 +19,20 @@ window.addEventListener( "keydown", function(){
         var usercode = event.charCode || event.keyCode;  // Get the Unicode value
         var userletter = String.fromCharCode(usercode).toLowerCase();  // Convert the value into a character
 
+        var isWrong = true;
         for(i=0; i<getRandomName.length; i++){
             if (userletter === getRandomName[i]){
                 tempName[i]=userletter;
+                isWrong = false;
             }
         }     
 
         // updating various counter, array etc
+        if (isWrong){
+            entryLeft--;
+            totalEntry.push(userletter.toUpperCase());
+        }
         newName = tempName.toString().replace(/,/g, '');
-        entryLeft--;
-        totalEntry.push(userletter.toUpperCase());
 
         // updating the screen based on updated data
         document.getElementById("uguess").innerHTML = newName.toUpperCase();
