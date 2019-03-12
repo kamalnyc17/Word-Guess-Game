@@ -23,7 +23,4 @@ sharon
 michelle
 gwyneth
 
-Contact me at kamalnyc17@gmail.com for any additional information
-
-Thanks,
-Kamal Mukherjee
+8. Link to the deployed project: https://kamalnyc17.github.io/Word-Guess-Game/
