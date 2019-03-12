@@ -4,7 +4,8 @@
 
 2. User can attempt 15 times to come up with the correct spelling of the name that the computer has gussed.
 
-4. The script will update the spelling of the name in real time as the user types them.
+4. The script will update the spelling of the name in real time as the user types them. The script will also display every letter that the user has
+typed so far.
 
 5. If the user guesses the correct name, the script will play a music of applaud to indicate the user has won.
 
@@ -24,3 +25,5 @@ michelle
 gwyneth
 
 8. Link to the deployed project: https://kamalnyc17.github.io/Word-Guess-Game/
+
+Technologies Used: HTML, CSS, JavaScript
